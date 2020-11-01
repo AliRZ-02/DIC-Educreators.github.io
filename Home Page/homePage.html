@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="homePage.css">
+    <link rel="shortcut icon" href="../Icons/Icon1.png" type="favicon/ico" />
+    <title>
+        Edu-creation
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            background-image: url("Homepage.png");
+            background-size: cover;
+            font-family: "Consolas", Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../Icons/Educreators2.png" class = "logo" style="width: 48px; height: 48px; border-radius: 10px;">
+            <h4 href="homePage.html" class="logo" style="padding-left: 10px; vertical-align: middle; text-align: center; padding-top: 14px;"> EduCreate </h4>
+        </div>
+        <a href="#" style="padding: 14px;"> Class Schedule </a>
+        <a href="#" style="padding: 14px;"> Email Teacher </a>
+        <a href="#" style="padding: 14px;"> Settings </a>
+        <a href="#" style="padding: 14px;"> Help Desk </a>
+        <button onclick="NewM(); NewA()" class="refresh"> Refresh </button>
+    </div>
+
+    <div class="dash">
+        <h1>
+            Welcome back Administrator!
+        </h1>
+        <h3 style="padding:0.5%;">
+            The Current Date is:
+            <script>
+                document.write(new Date().toLocaleDateString());
+            </script>
+        </h3>
+    </div>
+
+    <div class="selection">
+        <div class="image">
+            <img src="../Icons/Icon1.png"
+                style="width: 500px; height: 500px; float: left; outline-width: 2px; outline-color: #51A2D9;">
+        </div>
+        <div class="middle">
+
+        </div>
+        <div class="details">
+            <h1 style="vertical-align: middle;"> Character Information </h1>
+            <h1 id="Name" style="text-align: justify; padding-left: 2%; color: #0c2461;">
+                Name:
+                <script>
+                    var messages = "Name: Administrator"
+                    document.getElementById("Name").innerHTML = messages;
+                </script>
+            </h1>
+            <h1 id="Level" style="text-align: justify; padding-left: 2%;  color: #0c2461;">
+                Level:
+                <script>
+                    var messages = "Level: 24"
+                    document.getElementById("Level").innerHTML = messages;
+                </script>
+            </h1>
+            <h1 id="School" style="text-align: justify; padding-left: 2%; color: #0c2461;">
+                School
+                <script>
+                    var messages = "School: W3 Center for Learning"
+                    document.getElementById("School").innerHTML = messages;
+                </script>
+            </h1>
+            <h1 id="Ranks" style="text-align: justify; padding-left: 2%; color: #0c2461;">
+                Ranks
+                <script>
+                    var messages = "Highest Rank: 1"
+                    document.getElementById("Ranks").innerHTML = messages;
+                </script>
+            </h1>
+            <h1 id="Streak" style="text-align: justify; padding-left: 2%; color: #0c2461;">
+                Streak
+                <script>
+                    var messages = "Current Streak: 7 Days!"
+                    document.getElementById("Streak").innerHTML = messages;
+                </script>
+            </h1>
+            <h1 id="Teacher" style="text-align: justify; padding-left: 2%; color: #0c2461;">
+                Teacher
+                <script>
+                    var messages = "Teacher: DIC-EduCreator"
+                    document.getElementById("Teacher").innerHTML = messages;
+                </script>
+            </h1>
+            <h1 id="Best Friends" style="text-align: justify; padding-left: 2%; color: #0c2461;">
+                Best Friends
+                <script>
+                    var messages = "Friends: A1, A2, A3"
+                    document.getElementById("Best Friends").innerHTML = messages;
+                </script>
+            </h1>
+        </div>
+    </div>
+    </div>
+
+    <div class="spacing">
+
+    </div>
+
+    <div class="Top">
+        <div class="Announcements">
+            <h1 class="a-text">
+                Announcements
+            </h1>
+            <h4>
+                <script>
+                    var pins = false
+                    var messages = "Pinned Messages"
+                    if (pins) {
+                        document.write(messages);
+                    } else {
+                        document.write("No Pinned Messages")
+                    }
+                </script>
+            </h4>
+            <h4 id="New">
+                Refresh to see New Messages
+            </h4>
+        </div>
+
+        <div class="middle">
+
+        </div>
+
+        <div class="Tasks" onclick="TasksPage()">
+            <h1>
+                Tasks
+            </h1>
+
+            <h4>
+                Click to See Today's Tasks
+            </h4>
+            
+        </div>
+    </div>
+
+    <div class="Bottom">
+        <div class="Assignments">
+
+            <h1>
+                Assignments
+            </h1>
+
+            <h4>
+                <script>
+                    var pins = true
+                    var messages = "Complete 'Addition of Fractions Worksheet' for Fri. November 6";
+                    if (pins) {
+                        document.write(messages);
+                    } else {
+                        document.write("No Pinned Tasks")
+                    }
+                </script>
+            </h4>
+            <h4 id="NewAssignments">
+                Refresh to see New Assignments
+            </h4>
+
+        </div>
+
+        <div class="middle">
+
+        </div>
+
+        <div class="More" onclick="SubjectPage()">
+            <h1>
+                Subjects
+            </h1>
+            <h4>
+                Come on and Explore!
+            </h4>
+        </div>
+    </div>
+    <div class="Sticky">
+    </div>
+    <script src="homePage.js"></script>
+</body>
+
+</html>

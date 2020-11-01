@@ -1,0 +1,93 @@
+.navbar {
+    font-family: Consolas, Helvetica, sans-serif;
+    float: right;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #dff9fb;
+}
+
+.navbar a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.navbar a.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.navbar a.left {
+    float: right;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+p1 {
+    text-align: center;
+    margin-top: 5%;
+    font-family: "Agency FB";
+    font-weight: normal;
+    font-size: 200%;
+    color: black;
+}
+
+p2 {
+    text-align: center;
+    margin-top: 5%;
+    font-family: "Agency FB";
+    font-weight: normal;
+    font-size: 200%;
+    color: #ff0000;
+}
+
+p {
+    text-align: center;
+    color: #fdec6e;
+}
+
+b:link {
+    text-decoration: none;
+}
+
+b:visited {
+    text-decoration: none;
+    color: black;
+}
+
+b {
+    color: black;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+b:hover {
+    color: #fcff47;
+    text-shadow: 0px 0px 30px #fcff47;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.rotate270 {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
