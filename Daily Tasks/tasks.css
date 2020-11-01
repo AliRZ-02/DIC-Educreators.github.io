@@ -65,6 +65,7 @@
 }
 
 .details {
+    vertical-align: middle;
     background-color: #ff7675;
     box-shadow: 5px 10px 18px #34495e;
     opacity: 0.85;
